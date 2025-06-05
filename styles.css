@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'KodReg';
+    src: url('resources/Kodchasan-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'KodItalic';
+    src: url('resources/Kodchasan-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'KodBold';
+    src: url('resources/Kodchasan-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'KodBoldItalic';
+    src: url('resources/Kodchasan-BoldItalic.ttf');
+}    
+
+@font-face {
+    font-family: 'KodMedium';
+    src: url('resources/Kodchasan-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'KodMediumItalic';
+    src: url('resources/Kodchasan-MediumItalic.ttf');
+}
+
+
+
+body{
+    background-color: #131217;
+}
+
+button{
+    background-color: #2F2D39;
+    color: #8774E7;
+    font-family: KodMedium;
+    font-size: 140%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5%;
+    justify-content: center;
+}
+
+input{
+    font-family: KodItalic;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    width: 50%;        
+}
+
+label{
+    color: #D90368;
+    font-family: KodMedium;
+    font-size: 1000%;
+    display: block;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+.labelDiv{
+    padding-bottom: 10%;
+}
+
+.inputDiv{
+    padding-bottom: 1%;
+}
