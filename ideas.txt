@@ -1,0 +1,12 @@
+- Web app that allows user to paste in anything they want turned into a qr code
+- the app should be simple and clean looking
+- show the user a preview image of the qr code as they change various aspects of the code
+- allow user to change qrcode colors, size, error factor, etc.
+- Save past qrcodes for the user
+- package the app into a nice web app
+
+- add accounts and log in functionality
+    - database
+    - include content. qrcode image, date created, etc.
+- allow user to download the qrcode 
+- batch qr codes
