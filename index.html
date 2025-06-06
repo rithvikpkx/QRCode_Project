@@ -37,7 +37,7 @@
             event.preventDefault();
             const QRformdata = new FormData(this)
 
-            fetch('http://192.168.50.15:8000/process', {
+            fetch('/process', {
                 method: 'POST',
                 body: QRformdata
             })
@@ -45,7 +45,7 @@
             .then(response => response.text())
             .then(qrname => {
                 const img = document.getElementById('QRimage');
-                img.src = 'http://192.168.50.15:8000/QRimage/' + encodeURIComponent(qrname.trim());
+                img.src = '/QRimage/' + encodeURIComponent(qrname.trim());
             });
 
         });
