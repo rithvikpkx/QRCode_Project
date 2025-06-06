@@ -1,79 +1,103 @@
 @font-face {
     font-family: 'KodReg';
-    src: url('resources/Kodchasan-Regular.ttf');
+    src: url('resources/Kodchasan-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'KodItalic';
-    src: url('resources/Kodchasan-Italic.ttf');
+    src: url('resources/Kodchasan-Italic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'KodBold';
-    src: url('resources/Kodchasan-Bold.ttf');
+    src: url('resources/Kodchasan-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'KodBoldItalic';
-    src: url('resources/Kodchasan-BoldItalic.ttf');
+    src: url('resources/Kodchasan-BoldItalic.ttf') format('truetype');
 }    
 
 @font-face {
     font-family: 'KodMedium';
-    src: url('resources/Kodchasan-Medium.ttf');
+    src: url('resources/Kodchasan-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'KodMediumItalic';
-    src: url('resources/Kodchasan-MediumItalic.ttf');
+    src: url('resources/Kodchasan-MediumItalic.ttf') format('truetype');
 }
 
 
 
-body{
+body {
     background-color: #131217;
 }
 
-button{
-    background-color: #7f66f0;
-    color: #eef0ef;
+.button {
     font-family: KodMedium;
-    font-size: 240%;
+    font-size: 170%;
     border: none;
-    border-radius: 20px;
-    padding: 0.7%;
+    border-radius: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    margin-left: 2%;
+    transition-duration: 0.3s;
 }
 
-input{
+.qrifyButton {
+    background-color: #7f66f0;
+    color: #eef0ef;
+}
+
+.qrifyButton:hover {
+    background-color: #eef0ef;
+    color: #7f66f0;
+}
+
+
+input {
     font-family: KodItalic;
-    font-size: 240%;
+    font-size: 170%;
     border: none;
-    border-radius: 5px;
-    width: 50%;
+    border-radius: 10px;
+    width: 40%;
     color: gray;
     padding-left: 1%;
     padding-right: 1%;
-    padding-top: 0.6%;
-    padding-bottom: 0.6%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
     background-color: #2F2D39;
+    text-align: center;
 }
 
-label{
+label {
     color: #D90368;
     font-family: KodMedium;
-    font-size: 1000%;
+    font-size: 800%;
     display: block;
     text-align: center;
 }
 
-div{
+img {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 20%;
+    padding: 4%;
+}
+
+div {
     text-align: center;
 }
 
-.labelDiv{
-    padding-bottom: 10%;
+.labelDiv {
+    padding-bottom: 6%;
 }
 
-.inputDiv{
-    padding-bottom: 3%;
+.inputDiv {
+    padding-bottom: 2%;
 }
+

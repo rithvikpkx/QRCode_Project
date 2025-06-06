@@ -14,18 +14,44 @@
         <label> QRify </label>
     </div>
 
-    <form action="http://192.168.50.15:8000/process" method="POST">
+    <form id="QRform">
 
     <div class="inputDiv">
         <input type = "text" name = "content_field" placeholder="Enter any text or URL...">
-    </div>
-
-    <div class="buttonDiv">
-        <button type="submit">QRify This</button>
+        <button type="submit" class="button qrifyButton">QRify This</button>
     </div>
 
     </form>
+
+
+    <div class="imgDiv">
+        <img id="QRimage">
+    </div>
+
+
+
+    <script>
+
+        document.getElementById('QRform').addEventListener('submit', function(event){
+
+            event.preventDefault();
+            const QRformdata = new FormData(this)
+
+            fetch('http://192.168.50.15:8000/process', {
+                method: 'POST',
+                body: QRformdata
+            })
+
+            .then(response => response.text())
+            .then(qrname => {
+                const img = document.getElementById('QRimage');
+                img.src = 'http://192.168.50.15:8000/QRimage/' + encodeURIComponent(qrname.trim());
+            });
+
+        });
+
+    </script>
+
+
 </body>
-
-
 </html>
