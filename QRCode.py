@@ -29,7 +29,7 @@ class MyHandler(BaseHTTPRequestHandler):
         qrTime = str(time.time())
 
         #file_path = "qrcodes/qrcode" + qrTime + output_format
-        file_path = os.path.join("Python", "QRCode_Project", "qrcodes", "qrcode" + qrTime + output_format)
+        file_path = os.path.join("qrcodes", "qrcode" + qrTime + output_format)
         qrcode = segno.make_qr(content)
         qrcode.save(file_path, border = border, scale = scale)
 
