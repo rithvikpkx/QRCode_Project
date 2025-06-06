@@ -14,14 +14,17 @@
         <label> QRify </label>
     </div>
 
+    <form action="http://localhost:8000/process" method="POST">
+
     <div class="inputDiv">
-        <input class = "search-bar" type = "text" placeholder="Enter any text or URL...">
+        <input type = "text" name = "content_field" placeholder="Enter any text or URL...">
     </div>
 
     <div class="buttonDiv">
-        <button> QRify This </button>
+        <button type="submit">QRify This</button>
     </div>
 
+    </form>
 </body>
 
 

@@ -35,22 +35,27 @@ body{
 }
 
 button{
-    background-color: #2F2D39;
-    color: #8774E7;
+    background-color: #7f66f0;
+    color: #eef0ef;
     font-family: KodMedium;
-    font-size: 140%;
+    font-size: 240%;
     border: none;
-    border-radius: 10px;
-    padding: 0.5%;
-    justify-content: center;
+    border-radius: 20px;
+    padding: 0.7%;
 }
 
 input{
     font-family: KodItalic;
+    font-size: 240%;
     border: none;
     border-radius: 5px;
-    justify-content: center;
-    width: 50%;        
+    width: 50%;
+    color: gray;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    background-color: #2F2D39;
 }
 
 label{
@@ -70,5 +75,5 @@ div{
 }
 
 .inputDiv{
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
